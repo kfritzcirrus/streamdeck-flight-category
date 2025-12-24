@@ -2,8 +2,6 @@
 
 A Stream Deck plugin that displays real-time METAR flight categories (VFR, MVFR, IFR, LIFR) with color-coded icons for any airport.
 
-![Flight Category Example](docs/example.png)
-
 ## Features
 
 - **Real-time weather**: Fetches current METAR data from the FAA Aviation Weather API
