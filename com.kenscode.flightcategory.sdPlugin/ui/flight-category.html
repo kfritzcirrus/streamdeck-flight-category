@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flight Category Settings</title>
+    <link rel="stylesheet" href="https://sdpi-components.dev/releases/v3/sdpi-components.css" />
+    <script src="https://sdpi-components.dev/releases/v3/sdpi-components.js"></script>
+    <style>
+      .sdpi-wrapper {
+        padding: 0 16px;
+      }
+      .category-legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+      .category-item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 11px;
+      }
+      .category-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+      .vfr { background-color: #00C853; }
+      .mvfr { background-color: #2196F3; }
+      .ifr { background-color: #F44336; }
+      .lifr { background-color: #9C27B0; }
+    </style>
+  </head>
+  <body>
+    <sdpi-item label="ICAO Code">
+      <sdpi-textfield
+        setting="icao"
+        placeholder="KMQS"
+        maxlength="4"
+        pattern="[A-Za-z0-9]{3,4}"
+      ></sdpi-textfield>
+    </sdpi-item>
+
+    <sdpi-item label="Poll Interval">
+      <sdpi-select setting="pollInterval">
+        <option value="5">5 minutes</option>
+        <option value="10">10 minutes</option>
+        <option value="15" selected>15 minutes (default)</option>
+        <option value="30">30 minutes</option>
+        <option value="60">1 hour</option>
+      </sdpi-select>
+    </sdpi-item>
+
+    <sdpi-item label="API URL (optional)">
+      <sdpi-textfield
+        setting="apiUrl"
+        placeholder="https://avwx.rest/api/metar"
+      ></sdpi-textfield>
+    </sdpi-item>
+
+    <sdpi-item label="Flight Categories">
+      <div class="category-legend">
+        <div class="category-item">
+          <div class="category-dot vfr"></div>
+          <span>VFR</span>
+        </div>
+        <div class="category-item">
+          <div class="category-dot mvfr"></div>
+          <span>MVFR</span>
+        </div>
+        <div class="category-item">
+          <div class="category-dot ifr"></div>
+          <span>IFR</span>
+        </div>
+        <div class="category-item">
+          <div class="category-dot lifr"></div>
+          <span>LIFR</span>
+        </div>
+      </div>
+    </sdpi-item>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.DS_Store
+*.map
+logs/
+
+# Build output is committed for easy plugin installation
+# com.kenscode.flightcategory.sdPlugin/bin/

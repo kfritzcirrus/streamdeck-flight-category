@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <rect width="288" height="288" rx="24" fill="#1a1a2e"/>
+  <circle cx="144" cy="144" r="100" fill="#00C853" opacity="0.9"/>
+  <text x="144" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">VFR</text>
+  <path d="M144 60 L160 100 L200 100 L168 125 L180 165 L144 140 L108 165 L120 125 L88 100 L128 100 Z" fill="white" opacity="0.3"/>
+</svg>

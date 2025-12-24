@@ -1,0 +1,47 @@
+{
+  "UUID": "com.kenscode.flightcategory",
+  "Name": "Flight Category",
+  "Version": "1.0.0",
+  "Author": "Ken",
+  "Description": "Display real-time METAR flight categories (VFR, MVFR, IFR, LIFR) with color-coded icons for any airport.",
+  "Category": "Aviation",
+  "CategoryIcon": "imgs/plugin-icon",
+  "Icon": "imgs/plugin-icon",
+  "URL": "https://github.com/kenscode/streamdeck-flight-category",
+  "CodePath": "bin/plugin.js",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.5"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.15"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "Actions": [
+    {
+      "UUID": "com.kenscode.flightcategory.check",
+      "Name": "Flight Category",
+      "Tooltip": "Shows current flight category for an airport",
+      "Icon": "imgs/action-icon",
+      "PropertyInspectorPath": "ui/flight-category.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/action-icon",
+          "TitleAlignment": "middle",
+          "FontSize": "16"
+        }
+      ]
+    }
+  ]
+}
